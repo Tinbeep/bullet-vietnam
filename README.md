@@ -26,6 +26,34 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <div class="container">
 
+<div class="container">
+
+<div class="content">
+
+<h2>🏠 Welcome to Bullet Viet Nam</h2>
+
+<p>
+Welcome to Bullet Viet Nam Chess Club!
+We organize weekly Bullet tournaments, friendly matches,
+and help players improve together.
+</p>
+
+<div id="page-content">
+
+<h3>Latest News</h3>
+
+<p>
+🔥 Tuesday, Thursday, Saturday and Sunday are our official Arena days.
+</p>
+
+<p>
+🏆 Join our tournaments and climb the club ranking!
+</p>
+
+</div>
+
+</div>
+
 <div class="sidebar">
 
 <div class="logo">
