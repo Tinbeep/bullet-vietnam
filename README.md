@@ -1,236 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Bullet Viet Nam</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-body{
-    background:#f4f4f4;
-    font-family:Arial,Helvetica,sans-serif;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.sidebar{
-    width:340px;
-    background:white;
-    margin:30px auto;
-    border-radius:30px;
-    padding:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-.logo{
-    font-size:48px;
-    text-align:center;
-}
-
-.club-name{
-    text-align:center;
-    color:#ff2f92;
-    font-size:30px;
-    font-weight:bold;
-}
-
-.slogan{
-    text-align:center;
-    color:#777;
-    margin-bottom:25px;
-}
-
-.stats{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:25px;
-}
-
-.item{
-    text-align:center;
-    flex:1;
-}
-
-.item h2{
-    color:#ff2f92;
-    margin:0;
-}
-
-.item p{
-    margin:5px 0;
-    color:#666;
-}
-
-.title{
-    text-align:center;
-    color:#ff2f92;
-    font-weight:bold;
-    margin:20px 0;
-}
-
-.buttons{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-}
-
-.btn{
-    background:#ff4fa5;
-    color:white;
-    padding:12px;
-    text-align:center;
-    border-radius:25px;
-    font-weight:bold;
-}
-
-.website{
-    margin-top:18px;
-    background:linear-gradient(90deg,#8e44ff,#ff4fa5);
-    color:white;
-    text-align:center;
-    padding:14px;
-    border-radius:30px;
-    font-weight:bold;
-}
-
-.box{
-    margin-top:25px;
-    background:#fafafa;
-    border-radius:20px;
-    padding:18px;
-}
-
-.progress{
-    width:100%;
-    height:16px;
-    background:#ddd;
-    border-radius:30px;
-    overflow:hidden;
-    margin:10px 0;
-}
-
-.bar{
-    width:12%;
-    height:100%;
-    background:#ff4fa5;
-}
-
-.schedule{
-    margin-top:10px;
-}
-
-.day{
-    background:#f6ecff;
-    border-left:6px solid #b64cff;
-    padding:12px;
-    border-radius:15px;
-    margin-bottom:10px;
-}
-
-.day b{
-    color:#ff2f92;
-}
-
-</style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
+<div class="overlay"></div>
+
+<div class="container">
+
 <div class="sidebar">
 
-<div class="logo">♟️</div>
+<div class="logo">
 
-<div class="club-name">
-Bullet Viet Nam
-</div>
+<i class="fas fa-chess-pawn"></i>
 
-<div class="slogan">
-Learn • Play • Compete
+<h1>Bullet Viet Nam 🇻🇳</h1>
+
+<p>Play Fast • Think Faster • Win Together</p>
+
 </div>
 
 <div class="stats">
 
-<div class="item">
-<h2>11</h2>
-<p>Members</p>
+<div class="card">
+<i class="fas fa-users"></i>
+<h2>53</h2>
+<span>Members</span>
 </div>
 
-<div class="item">
+<div class="card">
+<i class="fas fa-trophy"></i>
 <h2>4</h2>
-<p>Arena/Week</p>
+<span>Arena</span>
 </div>
 
-<div class="item">
+<div class="card">
+<i class="fas fa-comments"></i>
 <h2>24/7</h2>
-<p>Chat</p>
+<span>Chat</span>
 </div>
 
 </div>
 
-<div class="title">
-📚 CLUB MENU
-</div>
+<h3 class="title">
+
+CLUB MENU
+
+</h3>
 
 <div class="buttons">
 
-<div class="btn">📘 About</div>
+<a href="#" class="btn">
+<i class="fas fa-book"></i>
+About
+</a>
 
-<div class="btn">🏆 Tournaments</div>
+<a href="#" class="btn">
+<i class="fas fa-trophy"></i>
+Tournament
+</a>
 
-<div class="btn">📜 Rules</div>
+<a href="#" class="btn">
+<i class="fas fa-scale-balanced"></i>
+Rules
+</a>
 
-<div class="btn">🥇 Ranking</div>
+<a href="#" class="btn">
+<i class="fas fa-ranking-star"></i>
+Ranking
+</a>
+
+<a href="#" class="website">
+
+<i class="fas fa-globe"></i>
+
+Visit Club Website
+
+</a>
 
 </div>
 
-<div class="website">
-🌐 Visit Bullet Viet Nam Website
-</div>
+<div class="progress-box">
 
-<div class="box">
+<h3>
 
-<b>📈 Community Progress</b>
+<i class="fas fa-chart-line"></i>
 
-<p>Current Members: <b>11 / 1000</b></p>
+Community Progress
+
+</h3>
 
 <div class="progress">
+
 <div class="bar"></div>
-</div>
-
-✔ 5 Members (Completed)<br>
-✔ 10 Members (Completed)<br>
-🔒 25 Members<br>
-🔒 50 Members<br>
-🔒 100 Members<br>
-🔒 250 Members<br>
-🔒 500 Members<br>
-👑 1000 Members
 
 </div>
 
-<div class="box">
+<ul>
 
-<b>🏆 Weekly Arena Schedule</b>
+<li>✅ 5 Members</li>
+
+<li>✅ 10 Members</li>
+
+<li>🔒 25 Members</li>
+
+<li>🔒 50 Members</li>
+
+<li>🔒 100 Members</li>
+
+<li>🔒 250 Members</li>
+
+<li>🔒 500 Members</li>
+
+<li>👑 1000 Members</li>
+
+</ul>
+
+</div>
 
 <div class="schedule">
 
+<h3>
+
+<i class="fas fa-calendar-days"></i>
+
+Weekly Arena
+
+</h3>
+
 <div class="day">
-<b>🔥 Tuesday</b><br>
-Bullet Arena
+
+<b>Tuesday</b>
+
+<span>20:00 - 21:00</span>
+
 </div>
 
 <div class="day">
-<b>⚡ Thursday</b><br>
-Bullet Arena
+
+<b>Thursday</b>
+
+<span>20:00 - 21:00</span>
+
 </div>
 
 <div class="day">
-<b>🌟 Saturday</b><br>
-Bullet Arena
+
+<b>Saturday</b>
+
+<span>20:00 - 21:00</span>
+
 </div>
 
 <div class="day">
-<b>👑 Sunday</b><br>
-Bullet Arena
+
+<b>Sunday</b>
+
+<span>20:00 - 21:00</span>
+
 </div>
 
 </div>
@@ -240,4 +185,5 @@ Bullet Arena
 </div>
 
 </body>
+
 </html>
