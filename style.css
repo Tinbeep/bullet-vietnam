@@ -208,3 +208,49 @@ body{
 }
 
 }
+/* ===== MAIN CONTENT ===== */
+
+.container{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:30px;
+    padding:40px;
+    max-width:1400px;
+    margin:auto;
+}
+
+.content{
+    flex:1;
+    min-height:700px;
+    background:rgba(20,20,20,.82);
+    backdrop-filter:blur(14px);
+    border:2px solid #81B64C;
+    border-radius:30px;
+    padding:35px;
+    color:white;
+    box-shadow:0 0 30px rgba(129,182,76,.35);
+}
+
+.content h2{
+    color:#81B64C;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.content h3{
+    color:#81B64C;
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+.content p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:12px;
+}
+
+#page-content{
+    margin-top:30px;
+}
