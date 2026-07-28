@@ -1,256 +1,106 @@
+const pageContent = document.getElementById("page-content");
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+document.querySelector(".about-btn").onclick = function () {
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:url("images/background.jpg") center center/cover no-repeat fixed;
-    min-height:100vh;
-    color:#fff;
-}
+pageContent.innerHTML = `
 
-.overlay{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.45);
-}
+<h2>📘 About Bullet Viet Nam</h2>
 
-.container{
-    position:relative;
-    display:flex;
-    justify-content:flex-end;
-    padding:40px;
-}
+<p>
+Bullet Viet Nam is a friendly Bullet Chess Club for everyone.
+</p>
 
-.sidebar{
-    width:360px;
-    background:rgba(20,20,20,.82);
-    backdrop-filter:blur(14px);
-    border:2px solid #81B64C;
-    border-radius:30px;
-    padding:25px;
-    box-shadow:0 0 30px rgba(129,182,76,.45);
-}
+<p>
+We organize weekly tournaments and help players improve together.
+</p>
 
-.logo{
-    text-align:center;
-    margin-bottom:25px;
-}
+<p>
+✔ Friendly Community<br>
+✔ Fair Play<br>
+✔ Weekly Events<br>
+✔ Active Members
+</p>
 
-.logo i{
-    font-size:55px;
-    color:#81B64C;
-    margin-bottom:10px;
-}
+`;
 
-.logo h1{
-    font-size:30px;
-    color:#81B64C;
-}
+};
 
-.logo p{
-    color:#ddd;
-    font-size:14px;
-    margin-top:8px;
-}
+document.querySelector(".tournament-btn").onclick = function () {
 
-.stats{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:10px;
-    margin:25px 0;
-}
+pageContent.innerHTML = `
 
-.card{
-    background:#2d2d2d;
-    border-radius:18px;
-    text-align:center;
-    padding:15px;
-    transition:.3s;
-}
+<h2>🏆 Weekly Tournament</h2>
 
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 0 15px rgba(129,182,76,.6);
-}
+<h3>Tuesday</h3>
+<p>20:00 - 21:00 Bullet Arena</p>
 
-.card i{
-    font-size:24px;
-    color:#81B64C;
-    margin-bottom:8px;
-}
+<h3>Thursday</h3>
+<p>20:00 - 21:00 Bullet Arena</p>
 
-.card h2{
-    font-size:24px;
-}
+<h3>Saturday</h3>
+<p>20:00 - 21:00 Bullet Arena</p>
 
-.card span{
-    font-size:13px;
-    color:#ccc;
-}
+<h3>Sunday</h3>
+<p>20:00 - 21:00 Bullet Arena</p>
 
-.title{
-    text-align:center;
-    color:#81B64C;
-    margin-bottom:15px;
-}
-.buttons{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-    margin-bottom:20px;
-}
+`;
 
-.btn,
-.website{
-    text-decoration:none;
-    color:white;
-    background:#81B64C;
-    padding:14px;
-    border-radius:16px;
-    text-align:center;
-    font-weight:600;
-    transition:.3s;
-}
+};
 
-.website{
-    grid-column:1/3;
-    background:linear-gradient(90deg,#5d9940,#81B64C);
-}
+document.querySelector(".rules-btn").onclick = function () {
 
-.btn:hover,
-.website:hover{
-    transform:translateY(-3px);
-    box-shadow:0 0 18px rgba(129,182,76,.8);
-}
+pageContent.innerHTML = `
 
-.btn i,
-.website i{
-    margin-right:8px;
-}
+<h2>📜 Club Rules</h2>
 
-.progress-box,
-.schedule{
-    margin-top:25px;
-    background:rgba(255,255,255,.05);
-    border-radius:18px;
-    padding:18px;
-}
+<ol>
 
-.progress-box h3,
-.schedule h3{
-    color:#81B64C;
-    margin-bottom:15px;
-}
+<li>Respect all members.</li>
 
-.progress{
-    width:100%;
-    height:12px;
-    background:#333;
-    border-radius:20px;
-    overflow:hidden;
-    margin-bottom:15px;
-}
+<li>No cheating.</li>
 
-.bar{
-    width:12%;
-    height:100%;
-    background:linear-gradient(90deg,#81B64C,#b8ff73);
-}
+<li>No offensive language.</li>
 
-.progress-box ul{
-    list-style:none;
-}
+<li>Play fair.</li>
 
-.progress-box li{
-    padding:5px 0;
-    color:#ddd;
-}
+<li>Enjoy the community.</li>
 
-.day{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(129,182,76,.12);
-    border-left:5px solid #81B64C;
-    padding:12px;
-    border-radius:12px;
-    margin-bottom:10px;
-    transition:.3s;
-}
+</ol>
 
-.day:hover{
-    background:rgba(129,182,76,.25);
-    transform:translateX(5px);
-}
+`;
 
-.day b{
-    color:#81B64C;
-}
+};
 
-.day span{
-    color:#ddd;
-}
+document.querySelector(".ranking-btn").onclick = function () {
 
-@media(max-width:768px){
+pageContent.innerHTML = `
 
-.container{
-    justify-content:center;
-    padding:20px;
-}
+<h2>🥇 Club Ranking</h2>
 
-.sidebar{
-    width:100%;
-    max-width:380px;
-}
+<table>
 
-}
-/* ===== MAIN CONTENT ===== */
+<tr>
+<th>Rank</th>
+<th>Player</th>
+</tr>
 
-.container{
-    position:relative;
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:30px;
-    padding:40px;
-    max-width:1400px;
-    margin:auto;
-}
+<tr>
+<td>🥇</td>
+<td>Coming Soon</td>
+</tr>
 
-.content{
-    flex:1;
-    min-height:700px;
-    background:rgba(20,20,20,.82);
-    backdrop-filter:blur(14px);
-    border:2px solid #81B64C;
-    border-radius:30px;
-    padding:35px;
-    color:white;
-    box-shadow:0 0 30px rgba(129,182,76,.35);
-}
+<tr>
+<td>🥈</td>
+<td>Coming Soon</td>
+</tr>
 
-.content h2{
-    color:#81B64C;
-    font-size:36px;
-    margin-bottom:15px;
-}
+<tr>
+<td>🥉</td>
+<td>Coming Soon</td>
+</tr>
 
-.content h3{
-    color:#81B64C;
-    margin-top:25px;
-    margin-bottom:10px;
-}
+</table>
 
-.content p{
-    color:#ddd;
-    line-height:1.8;
-    margin-bottom:12px;
-}
+`;
 
-#page-content{
-    margin-top:30px;
-}
+};
